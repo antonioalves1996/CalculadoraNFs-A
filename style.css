@@ -138,8 +138,13 @@ footer {
     align-items: center;
 }
 
+
 #clock {
-    font-size: 1.2em;
-    margin-right: 100px;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.0);
     color: #fff;
+    padding: 5px;
+    border-radius: 5px;
 }
