@@ -17,8 +17,8 @@ body {
 
 header {
     width: 100%;
-    text-align: center;
-    margin-bottom: 30px; /* Espaço abaixo do h1 */
+    text-align: left;
+    margin-bottom: 0px; /* Espaço abaixo do h1 */
     animation: slideInFromTop 1s ease-in-out;
 }
 
@@ -53,22 +53,17 @@ main {
 }
 
 .container {
-    text-align: center;
-    padding: 80px;
-    border-radius: 50px;
+    text-align: left;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1s ease-in-out 0.5s;
     animation-fill-mode: both;
+    margin: 15px;
   }
 
 
-
-h1 {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  width: 100%;
-  padding: 15px 0;
-}
 
 
 input[type="text"] {
@@ -148,3 +143,57 @@ footer {
     padding: 5px;
     border-radius: 5px;
 }
+
+
+ /* Adicione estilo para o menu */
+ .menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 18px;
+  }
+  
+  .menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px;
+  }
+
+  .menu-button:hover {
+    background-color: #45a049;
+  }
+
+  .menu-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .menu-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .container2 {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 160px;
+  }
