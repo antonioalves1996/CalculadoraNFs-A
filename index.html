@@ -5,20 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora NFS-e</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
   <header>
-    <h1>Calculadora NFS-e (PJ)</h1>
+    <button class="menu-button" onclick="showSection('home')">Home</button>
+    <button class="menu-button" onclick="showSection('calculator')">Calculadora</button>
   </header>
 
-</form>
-</div>
-<div id="clock"></div>
-
   <main>
-    <div class="container">
-      <div style="text-align: left; background-color: rgba(255, 255, 255, 0.9);padding: 30px;border-radius: 15px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);">  
+    <div id="home" class="section active">
+      <div class="container2">
+        <h2>Bem-vindo à Calculadora NFS-e</h2>
+        <p>Use esta calculadora para calcular impostos como IRRF, ISS, INSS, PIS, COFINS e CSLL para Pessoa Jurídica.</p>
+      </div>
+    </div>
+    
+    <div id="calculator" class="section">
+      <div class="container">
         <form id="taxCalculatorForm">
           <label for="valorNota">Valor da Nota:</label>
           <input type="text" id="valorNota"><br>
@@ -35,7 +40,6 @@
             </select><br>
           </div>
           
-
           <label>ISS:</label>
           <input type="radio" name="issOption" value="Sim" checked onchange="toggleElements('iss')">Sim
           <input type="radio" name="issOption" value="Não" onchange="toggleElements('iss')">Não<br>
@@ -70,18 +74,17 @@
           <button type="button" onclick="calcularImpostos()">Calcular</button><br><br>
 
           <div id="resultado"></div>
-          
+        </form>
       </div>
     </div>
   </main>
 
-<footer>
-  <div class="footer-content">
-    <div>2024 Inc. Todos os direitos reservados Antonio Alves.</div>
-  </div>
-</footer>
+  <footer>
+    <div class="footer-content">
+      <div>2024 Inc. Todos os direitos reservados Antonio Alves.</div>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
-  <script src="clock.js"></script>
 </body>
 </html>
